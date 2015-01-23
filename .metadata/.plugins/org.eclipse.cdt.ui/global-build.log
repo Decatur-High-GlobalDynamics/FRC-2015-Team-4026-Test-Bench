@@ -1,0 +1,674 @@
+19:05:42 **** Rebuild of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Motor Controller/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+19:10:06 **** Rebuild of configuration Debug for project HelloFirst ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/HelloFirst/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/HelloFirst/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/OI.o ../src/OI.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/HelloFirst/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/CommandBase.o ../src/CommandBase.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/HelloFirst/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Subsystems/ExampleSubsystem.o ../src/Subsystems/ExampleSubsystem.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/HelloFirst/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Commands/ExampleCommand.o ../src/Commands/ExampleCommand.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Subsystems/ExampleSubsystem.o src/Robot.o src/OI.o src/Commands/ExampleCommand.o src/CommandBase.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+19:11:24 **** Rebuild of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+19:20:49 **** Rebuild of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:15:8: error: field 'myRobot' has incomplete type 'Robot'
+  Robot myRobot;
+        ^
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:17:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:16:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:22:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:19:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:18:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:22:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+19:21:57 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:4:8: error: field 'myRobot' has incomplete type 'Robot'
+  Robot myRobot;
+        ^
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:8: warning:   '<typeprefixerror>Robot::myRobot' [-Wreorder]
+  Robot myRobot;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:18: error: no match for 'operator=' (operand types are 'Talon' and 'Joystick')
+    leftDriveMotor=leftDriveStick;
+                  ^
+../src/Robot.cpp:25:18: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:15:7: note: Talon& Talon::operator=(const Talon&) <deleted>
+ class Talon : public SafePWM, public SpeedController
+       ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:15:7: note:   no known conversion for argument 1 from 'Joystick' to 'const Talon&'
+../src/Robot.cpp:26:19: error: no match for 'operator=' (operand types are 'Talon' and 'Joystick')
+    rightDriveMotor=rightDriveStick;
+                   ^
+../src/Robot.cpp:26:19: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:15:7: note: Talon& Talon::operator=(const Talon&) <deleted>
+ class Talon : public SafePWM, public SpeedController
+       ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:15:7: note:   no known conversion for argument 1 from 'Joystick' to 'const Talon&'
+19:24:36 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:4:8: error: field 'myRobot' has incomplete type 'Robot'
+  Robot myRobot;
+        ^
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:8: warning:   '<typeprefixerror>Robot::myRobot' [-Wreorder]
+  Robot myRobot;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:19: error: 'class Talon' has no member named 'set'
+    leftDriveMotor.set(leftDriveStick);
+                   ^
+../src/Robot.cpp:26:20: error: 'class Talon' has no member named 'set'
+    rightDriveMotor.set(rightDriveStick);
+                    ^
+19:24:54 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:4:8: error: field 'myRobot' has incomplete type 'Robot'
+  Robot myRobot;
+        ^
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:8: warning:   '<typeprefixerror>Robot::myRobot' [-Wreorder]
+  Robot myRobot;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:19: error: 'class Talon' has no member named 'set'
+    leftDriveMotor.set(leftDriveStick);
+                   ^
+../src/Robot.cpp:26:20: error: 'class Talon' has no member named 'set'
+    rightDriveMotor.set(rightDriveStick);
+                    ^
+19:26:10 **** Rebuild of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+19:26:54 **** Rebuild of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:13: warning:   'RobotDrive Robot::myRobot' [-Wreorder]
+  RobotDrive myRobot;
+             ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:37: error: no matching function for call to 'Talon::Set(Joystick&)'
+    leftDriveMotor.Set(leftDriveStick);
+                                     ^
+../src/Robot.cpp:25:37: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+../src/Robot.cpp:26:39: error: no matching function for call to 'Talon::Set(Joystick&)'
+    rightDriveMotor.Set(rightDriveStick);
+                                       ^
+../src/Robot.cpp:26:39: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+19:26:55 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:13: warning:   'RobotDrive Robot::myRobot' [-Wreorder]
+  RobotDrive myRobot;
+             ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:37: error: no matching function for call to 'Talon::Set(Joystick&)'
+    leftDriveMotor.Set(leftDriveStick);
+                                     ^
+../src/Robot.cpp:25:37: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+../src/Robot.cpp:26:39: error: no matching function for call to 'Talon::Set(Joystick&)'
+    rightDriveMotor.Set(rightDriveStick);
+                                       ^
+../src/Robot.cpp:26:39: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+Info: Nothing to build for 2015TestBenchControl
+19:28:30 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:13: warning:   'RobotDrive Robot::myRobot' [-Wreorder]
+  RobotDrive myRobot;
+             ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:37: error: no matching function for call to 'Talon::Set(Joystick&)'
+    leftDriveMotor.Set(leftDriveStick);
+                                     ^
+../src/Robot.cpp:25:37: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+../src/Robot.cpp:26:39: error: no matching function for call to 'Talon::Set(Joystick&)'
+    rightDriveMotor.Set(rightDriveStick);
+                                       ^
+../src/Robot.cpp:26:39: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+Info: Nothing to build for 2015TestBenchControl
+19:29:54 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:13: warning:   'RobotDrive Robot::myRobot' [-Wreorder]
+  RobotDrive myRobot;
+             ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:37: error: no matching function for call to 'Talon::Set(Joystick&)'
+    leftDriveMotor.Set(leftDriveStick);
+                                     ^
+../src/Robot.cpp:25:37: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+../src/Robot.cpp:26:39: error: no matching function for call to 'Talon::Set(Joystick&)'
+    rightDriveMotor.Set(rightDriveStick);
+                                       ^
+../src/Robot.cpp:26:39: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+Info: Nothing to build for 2015TestBenchControl
+19:30:50 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:13: warning:   'RobotDrive Robot::myRobot' [-Wreorder]
+  RobotDrive myRobot;
+             ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:37: error: no matching function for call to 'Talon::Set(Joystick&)'
+    leftDriveMotor.Set(leftDriveStick);
+                                     ^
+../src/Robot.cpp:25:37: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+../src/Robot.cpp:26:39: error: no matching function for call to 'Talon::Set(Joystick&)'
+    rightDriveMotor.Set(rightDriveStick);
+                                       ^
+../src/Robot.cpp:26:39: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+Info: Nothing to build for 2015TestBenchControl
+19:31:08 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:13: warning:   'RobotDrive Robot::myRobot' [-Wreorder]
+  RobotDrive myRobot;
+             ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:37: error: no matching function for call to 'Talon::Set(Joystick&)'
+    leftDriveMotor.Set(leftDriveStick);
+                                     ^
+../src/Robot.cpp:25:37: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+../src/Robot.cpp:26:39: error: no matching function for call to 'Talon::Set(Joystick&)'
+    rightDriveMotor.Set(rightDriveStick);
+                                       ^
+../src/Robot.cpp:26:39: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+Info: Nothing to build for 2015TestBenchControl
+19:34:20 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:13: warning:   'RobotDrive Robot::myRobot' [-Wreorder]
+  RobotDrive myRobot;
+             ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:37: error: no matching function for call to 'Talon::Set(Joystick&)'
+    leftDriveMotor.Set(leftDriveStick);
+                                     ^
+../src/Robot.cpp:25:37: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+../src/Robot.cpp:26:39: error: no matching function for call to 'Talon::Set(Joystick&)'
+    rightDriveMotor.Set(rightDriveStick);
+                                       ^
+../src/Robot.cpp:26:39: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+19:38:20 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'float Robot::smoothJoyStick(float)':
+../src/Robot.cpp:23:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+19:42:54 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'float Robot::smoothJoyStick(float)':
+../src/Robot.cpp:23:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl
+19:43:07 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'float Robot::smoothJoyStick(float)':
+../src/Robot.cpp:24:20: error: invalid operands of types 'float' and 'int' to binary 'operator^'
+    return joyInput^2;
+                    ^
+../src/Robot.cpp:28:20: error: invalid operands of types 'float' and 'int' to binary 'operator^'
+    return joyInput^2;
+                    ^
+19:43:39 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'float Robot::smoothJoyStick(float)':
+../src/Robot.cpp:24:20: error: invalid operands of types 'float' and 'int' to binary 'operator^'
+    return joyInput^2;
+                    ^
+../src/Robot.cpp:28:20: error: invalid operands of types 'float' and 'int' to binary 'operator^'
+    return joyInput^2;
+                    ^
+19:46:38 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+Info: Nothing to build for 2015TestBenchControl
+20:29:39 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:39:22: error: expected initializer before '<=' token
+    for (float i=-1, i<=1, i+=0.01)
+                      ^
+../src/Robot.cpp:39:22: error: expected ';' before '<=' token
+../src/Robot.cpp:39:22: error: expected primary-expression before '<=' token
+../src/Robot.cpp:39:34: error: expected ';' before ')' token
+    for (float i=-1, i<=1, i+=0.01)
+                                  ^
+../src/Robot.cpp:41:5: error: 'console' was not declared in this scope
+     console.printf
+     ^
+20:30:37 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:41:29: error: cannot convert 'float' to 'const char*' for argument '1' to 'int printf(const char*, ...)'
+     printf(smoothJoyStick(i));
+                             ^
+20:33:12 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:41:29: error: cannot convert 'float' to 'const char*' for argument '1' to 'int printf(const char*, ...)'
+     printf(smoothJoyStick(i));
+                             ^
+20:33:17 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl
+20:49:17 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+21:04:41 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+Info: Nothing to build for 2015TestBenchControl
+Info: Nothing to build for 2015TestBenchControl

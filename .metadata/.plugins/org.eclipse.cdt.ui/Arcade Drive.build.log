@@ -1,0 +1,55 @@
+19:34:20 **** Incremental Build of configuration Debug for project Arcade Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include "-I/Users/darien/Desktop/frc4026-2015/Arcade Drive/src" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In constructor 'Robot::Robot()':
+../src/Robot.cpp:6:8: warning: 'Robot::leftDriveMotor' will be initialized after [-Wreorder]
+  Talon leftDriveMotor;
+        ^
+../src/Robot.cpp:5:8: warning:   'Talon Robot::rightDriveMotor' [-Wreorder]
+  Talon rightDriveMotor;
+        ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:8:11: warning: 'Robot::leftDriveStick' will be initialized after [-Wreorder]
+  Joystick leftDriveStick; // left joystick
+           ^
+../src/Robot.cpp:7:11: warning:   'Joystick Robot::rightDriveStick' [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp:7:11: warning: 'Robot::rightDriveStick' will be initialized after [-Wreorder]
+  Joystick rightDriveStick; // right joystick
+           ^
+../src/Robot.cpp:4:13: warning:   'RobotDrive Robot::myRobot' [-Wreorder]
+  RobotDrive myRobot;
+             ^
+../src/Robot.cpp:11:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:25:37: error: no matching function for call to 'Talon::Set(Joystick&)'
+    leftDriveMotor.Set(leftDriveStick);
+                                     ^
+../src/Robot.cpp:25:37: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+../src/Robot.cpp:26:39: error: no matching function for call to 'Talon::Set(Joystick&)'
+    rightDriveMotor.Set(rightDriveStick);
+                                       ^
+../src/Robot.cpp:26:39: note: candidate is:
+In file included from /Users/darien/wpilib/cpp/current/include/WPILib.h:80:0,
+                 from ../src/Robot.cpp:1:
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note: virtual void Talon::Set(float, uint8_t)
+  virtual void Set(float value, uint8_t syncGroup = 0);
+               ^
+/Users/darien/wpilib/cpp/current/include/Talon.h:20:15: note:   no known conversion for argument 1 from 'Joystick' to 'float'
+
+19:34:21 Build Finished (took 942ms)
+
