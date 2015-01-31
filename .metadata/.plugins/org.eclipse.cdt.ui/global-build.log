@@ -708,3 +708,165 @@ Info: Internal Builder is used for build
 arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
 arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
 /usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+18:42:15 **** Rebuild of configuration Debug for project 2015CompetitionRobotControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015CompetitionRobotControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:45:8: error: 'joysticks' was not declared in this scope
+    if (joysticks[0])
+        ^
+../src/Robot.cpp:51:21: error: 'customTankDrive' was not declared in this scope
+     customTankDrive();
+                     ^
+Info: Nothing to build for 2015TestBenchControl
+18:42:28 **** Incremental Build of configuration Debug for project 2015CompetitionRobotControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015CompetitionRobotControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:45:8: error: 'joysticks' was not declared in this scope
+    if (joysticks[0])
+        ^
+Info: Nothing to build for 2015TestBenchControl
+18:42:55 **** Incremental Build of configuration Debug for project 2015CompetitionRobotControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015CompetitionRobotControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:45:16: error: expected primary-expression before '.' token
+    if (Joystick.joysticks[0])
+                ^
+Info: Nothing to build for 2015TestBenchControl
+18:43:26 **** Incremental Build of configuration Debug for project 2015CompetitionRobotControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015CompetitionRobotControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:45:16: error: expected primary-expression before '.' token
+    if (Joystick.joysticks[0]!=NULL)
+                ^
+Info: Nothing to build for 2015TestBenchControl
+18:52:23 **** Incremental Build of configuration Debug for project 2015CompetitionRobotControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015CompetitionRobotControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+Info: Nothing to build for 2015TestBenchControl
+18:54:04 **** Incremental Build of configuration Debug for project 2015CompetitionRobotControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015CompetitionRobotControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+Info: Nothing to build for 2015TestBenchControl
+18:57:09 **** Incremental Build of configuration Debug for project 2015CompetitionRobotControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015CompetitionRobotControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+18:57:11 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'void Robot::OperatorControl()':
+../src/Robot.cpp:35:28: error: 'IsOperatorControl' was not declared in this scope
+   while (IsOperatorControl() && IsEnabled())
+                            ^
+../src/Robot.cpp:35:43: error: 'IsEnabled' was not declared in this scope
+   while (IsOperatorControl() && IsEnabled())
+                                           ^
+In file included from /Users/darien/wpilib/cpp/current/include/IterativeRobot.h:9:0,
+                 from /Users/darien/wpilib/cpp/current/include/WPILib.h:55,
+                 from ../src/Robot.cpp:1:
+../src/Robot.cpp: In function 'int main()':
+/Users/darien/wpilib/cpp/current/include/RobotBase.h:19:30: error: no matching function for call to 'RobotBase::robotSetup(Robot*&)'
+   RobotBase::robotSetup(robot); \
+                              ^
+../src/Robot.cpp:44:1: note: in expansion of macro 'START_ROBOT_CLASS'
+ START_ROBOT_CLASS(Robot);
+ ^
+/Users/darien/wpilib/cpp/current/include/RobotBase.h:19:30: note: candidate is:
+   RobotBase::robotSetup(robot); \
+                              ^
+../src/Robot.cpp:44:1: note: in expansion of macro 'START_ROBOT_CLASS'
+ START_ROBOT_CLASS(Robot);
+ ^
+/Users/darien/wpilib/cpp/current/include/RobotBase.h:48:14: note: static void RobotBase::robotSetup(RobotBase*)
+  static void robotSetup(RobotBase *robot);
+              ^
+/Users/darien/wpilib/cpp/current/include/RobotBase.h:48:14: note:   no known conversion for argument 1 from 'Robot*' to 'RobotBase*'
+Info: Nothing to build for 2015CompetitionRobotControl
+18:57:29 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+19:48:37 **** Incremental Build of configuration Debug for project 2015CompetitionRobotControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015CompetitionRobotControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'void Robot::twistArcadeDrive()':
+../src/Robot.cpp:37:9: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   float x;
+         ^
+../src/Robot.cpp:38:9: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   float y;
+         ^
+../src/Robot.cpp:39:9: warning: variable 'twist' set but not used [-Wunused-but-set-variable]
+   float twist;
+         ^
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+19:48:39 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'void Robot::twistArcadeDrive()':
+../src/Robot.cpp:40:21: error: 'mainDriveStick' was not declared in this scope
+    x=smoothJoyStick(mainDriveStick.GetX());
+                     ^
+../src/Robot.cpp: In member function 'void Robot::tankDrive()':
+../src/Robot.cpp:46:31: error: 'mainDriveStick' was not declared in this scope
+    float right=smoothJoyStick(mainDriveStick.GetY());
+                               ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:57:24: error: 'noTwistArcadeDrive' was not declared in this scope
+     noTwistArcadeDrive();
+                        ^
+Info: Nothing to build for 2015CompetitionRobotControl
+19:48:51 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'void Robot::customArcadeDrive()':
+../src/Robot.cpp:29:20: error: 'DriveStick' was not declared in this scope
+   x=smoothJoyStick(DriveStick.GetX());
+                    ^
+../src/Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+../src/Robot.cpp:57:24: error: 'noTwistArcadeDrive' was not declared in this scope
+     noTwistArcadeDrive();
+                        ^
+Info: Nothing to build for 2015CompetitionRobotControl
+19:49:04 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'void Robot::noTwistArcadeDrive()':
+../src/Robot.cpp:29:20: error: 'DriveStick' was not declared in this scope
+   x=smoothJoyStick(DriveStick.GetX());
+                    ^
+Info: Nothing to build for 2015CompetitionRobotControl
+19:49:14 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'void Robot::noTwistArcadeDrive()':
+../src/Robot.cpp:31:27: error: 'DriveStick' was not declared in this scope
+   float adjustedThrottle=(DriveStick.GetThrottle()+1)/-2; //changes throttle from: -1 is throttle up and 1 is throttle down
+                           ^
+Info: Nothing to build for 2015CompetitionRobotControl
+19:49:35 **** Incremental Build of configuration Debug for project 2015TestBenchControl ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/darien/wpilib/cpp/current/include -I/Users/darien/Desktop/frc4026-2015/2015TestBenchControl/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'void Robot::twistArcadeDrive()':
+../src/Robot.cpp:37:10: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+    float x;
+          ^
+../src/Robot.cpp:38:10: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+    float y;
+          ^
+../src/Robot.cpp:39:10: warning: variable 'twist' set but not used [-Wunused-but-set-variable]
+    float twist;
+          ^
+arm-frc-linux-gnueabi-g++ -L/Users/darien/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/darien/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20

@@ -1,0 +1,69 @@
+#include "WPILib.h"
+#include "stdio.h"
+#include "math.h"
+class Robot: public SampleRobot
+{
+	//RobotDrive myRobot;
+	Talon leftDriveMotor;
+	Talon rightDriveMotor;
+	Joystick mainDriveStick; // arcade drive joystick
+	Joystick secondaryDriveStick; //joystick for left side tank drive
+	bool twoSticks=false; //temparary placeholder
+public:
+	Robot() :
+			leftDriveMotor(0),
+			rightDriveMotor(1),
+			mainDriveStick(0),
+			secondaryDriveStick(1)
+	{
+		//myRobot.SetExpiration(0.1);
+	}
+	float smoothJoyStick(float joyInput)
+	{
+		return powf(joyInput,3);
+	}
+	void noTwistArcadeDrive() //the motor's speed is the joystick input multiplied by speedCoef, this way the crazy drivetrain can be slowed down
+	{
+		float x;
+		float y;
+		x=smoothJoyStick(DriveStick.GetX());
+		y=smoothJoyStick(DriveStick.GetY());
+		float adjustedThrottle=(DriveStick.GetThrottle()+1)/-2; //changes throttle from: -1 is throttle up and 1 is throttle down
+		leftDriveMotor.Set((y+x)*adjustedThrottle);
+		rightDriveMotor.Set(-(y-x)*adjustedThrottle); //the right side runs where -1 is full speed forward
+	}
+	void twistArcadeDrive()
+		{
+			float x;
+			float y;
+			float twist;
+			x=smoothJoyStick(mainDriveStick.GetX());
+			y=smoothJoyStick(mainDriveStick.GetY());
+			twist=smoothJoyStick(mainDriveStick.GetTwist());
+		}
+	void tankDrive()
+		{
+			float right=smoothJoyStick(mainDriveStick.GetY());
+			float left=smoothJoyStick(secondaryDriveStick.GetX());
+			leftDriveMotor.Set(left);
+			rightDriveMotor.Set(-right); //the right side runs where -1 is full speed forward
+		}
+	void OperatorControl()
+	{
+		while (IsOperatorControl() && IsEnabled())
+		{
+			if (!twoSticks)
+			{
+				noTwistArcadeDrive();
+			}
+			else
+			{
+				tankDrive();
+			}
+			Wait(0.005);				// wait for a motor update time
+		}
+	}
+
+};
+
+START_ROBOT_CLASS(Robot);

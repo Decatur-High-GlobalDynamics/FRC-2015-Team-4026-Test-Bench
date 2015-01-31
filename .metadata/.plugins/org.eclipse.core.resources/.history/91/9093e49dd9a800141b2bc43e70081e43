@@ -1,0 +1,52 @@
+#include "WPILib.h"
+#include "stdio.h"
+#include "math.h"
+class Robot: public SampleRobot
+{
+	//RobotDrive myRobot;
+	Talon leftDriveMotor;
+	Talon rightDriveMotor;
+	Joystick mainDriveStick; // arcade drive joystick and right tank drive joystick
+	Joystick secondaryDriveStick; //joystick for left side tank drive
+public:
+	Robot() :
+			leftDriveMotor(0),
+			rightDriveMotor(1),
+			mainDriveStick(0),
+			secondaryDriveStick(1)
+	{
+		//myRobot.SetExpiration(0.1);
+	}
+	float smoothJoyStick(float joyInput)
+	{
+		return powf(joyInput,3);
+	}
+	void customArcadeDrive()
+		{
+			float x;
+			float y;
+			x=smoothJoyStick(mainDriveStick.GetX());
+			y=smoothJoyStick(mainDriveStick.GetY());
+			float speedCoef=(mainDriveStick.GetThrottle()+1)/-2;
+			leftDriveMotor.Set((y+x)*speedCoef);
+			rightDriveMotor.Set(-(y-x)*speedCoef); //the right side runs where -1 is full speed forward
+		}
+	void tankDrive()
+		{
+			float right=smoothJoyStick(mainDriveStick.GetY());
+			float left=smoothJoyStick(secondaryDriveStick.GetX());
+			leftDriveMotor.Set(left);
+			rightDriveMotor.Set(-right); //the right side runs where -1 is full speed forward
+		}
+	void OperatorControl()
+	{
+		while (IsOperatorControl() && IsEnabled())
+		{
+			customArcadeDrive();
+			Wait(0.005);				// wait for a motor update time
+		}
+	}
+
+};
+
+START_ROBOT_CLASS(Robot);
