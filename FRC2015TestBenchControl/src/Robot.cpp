@@ -21,7 +21,14 @@ public:
 	}
 	float getAdjustedThrottle()
 	{
-		return 1-((mainDriveStick.GetThrottle()+1)/2);
+		if (mainDriveStick.GetThrottle()!=NULL)
+		{
+			return 1-((mainDriveStick.GetThrottle()+1)/2);
+		}
+		else
+		{
+			return 1;
+		}
 	}
 
 	float setDrive(float left, float right)
@@ -65,7 +72,7 @@ public:
 			{
 				tankDrive();
 			}
-			else if (twistDrive)
+			else if (twistDrive && mainDriveStick.GetAxisCount() > 2)
 			{
 				twistArcadeDrive();
 			}
